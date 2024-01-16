@@ -29,7 +29,7 @@ but with fallback to MemoryCryptoStore.</p>
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/_internal_.CryptoStore.html" class="tsd-signature-type tsd-kind-interface">CryptoStore</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L50">src/crypto/store/indexeddb-crypto-store.ts:50</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L51">src/crypto/store/indexeddb-crypto-store.ts:51</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -61,6 +61,7 @@ but with fallback to MemoryCryptoStore.</p>
 <a href="IndexedDBCryptoStore.html#addParkedSharedHistory" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Parked<wbr/>Shared<wbr/>History</span></a>
 <a href="IndexedDBCryptoStore.html#addSharedHistoryInboundGroupSession" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Shared<wbr/>History<wbr/>Inbound<wbr/>Group<wbr/>Session</span></a>
 <a href="IndexedDBCryptoStore.html#containsData" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>contains<wbr/>Data</span></a>
+<a href="IndexedDBCryptoStore.html#countEndToEndInboundGroupSessions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span></a>
 <a href="IndexedDBCryptoStore.html#countEndToEndSessions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions</span></a>
 <a href="IndexedDBCryptoStore.html#countSessionsNeedingBackup" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span></a>
 <a href="IndexedDBCryptoStore.html#deleteAllData" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete<wbr/>All<wbr/>Data</span></a>
@@ -132,19 +133,19 @@ but with fallback to MemoryCryptoStore.</p>
 <h4 class="tsd-returns-title">Returns <a href="IndexedDBCryptoStore.html" class="tsd-signature-type tsd-kind-class">IndexedDBCryptoStore</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L74">src/crypto/store/indexeddb-crypto-store.ts:74</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L75">src/crypto/store/indexeddb-crypto-store.ts:75</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="backend" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>backend</span><a href="#backend" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">backend</span><span class="tsd-signature-symbol">?:</span> <a href="../interfaces/_internal_.CryptoStore.html" class="tsd-signature-type tsd-kind-interface">CryptoStore</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L66">src/crypto/store/indexeddb-crypto-store.ts:66</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L67">src/crypto/store/indexeddb-crypto-store.ts:67</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="backendPromise" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>backend<wbr/>Promise</span><a href="#backendPromise" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">backend<wbr/>Promise</span><span class="tsd-signature-symbol">?:</span> <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_internal_.CryptoStore.html" class="tsd-signature-type tsd-kind-interface">CryptoStore</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L65">src/crypto/store/indexeddb-crypto-store.ts:65</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L66">src/crypto/store/indexeddb-crypto-store.ts:66</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="dbName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>db<wbr/>Name</span><a href="#dbName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">db<wbr/>Name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -152,7 +153,7 @@ but with fallback to MemoryCryptoStore.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L76">src/crypto/store/indexeddb-crypto-store.ts:76</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L77">src/crypto/store/indexeddb-crypto-store.ts:77</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="indexedDB" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>indexedDB</span><a href="#indexedDB" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">indexedDB</span><span class="tsd-signature-symbol">:</span> <a href="https://developer.mozilla.org/docs/Web/API/IDBFactory" class="tsd-signature-type external" target="_blank">IDBFactory</a></div>
@@ -160,52 +161,52 @@ but with fallback to MemoryCryptoStore.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L75">src/crypto/store/indexeddb-crypto-store.ts:75</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L76">src/crypto/store/indexeddb-crypto-store.ts:76</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_ACCOUNT" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>ACCOUNT</span><a href="#STORE_ACCOUNT" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>ACCOUNT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;account&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L51">src/crypto/store/indexeddb-crypto-store.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L52">src/crypto/store/indexeddb-crypto-store.ts:52</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_BACKUP" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>BACKUP</span><a href="#STORE_BACKUP" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>BACKUP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;sessions_needing_backup&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L59">src/crypto/store/indexeddb-crypto-store.ts:59</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L60">src/crypto/store/indexeddb-crypto-store.ts:60</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_DEVICE_DATA" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>DEVICE_<wbr/>DATA</span><a href="#STORE_DEVICE_DATA" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>DEVICE_<wbr/>DATA</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;device_data&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L57">src/crypto/store/indexeddb-crypto-store.ts:57</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L58">src/crypto/store/indexeddb-crypto-store.ts:58</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_INBOUND_GROUP_SESSIONS" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS</span><a href="#STORE_INBOUND_GROUP_SESSIONS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;inbound_group_sessions&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L53">src/crypto/store/indexeddb-crypto-store.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L54">src/crypto/store/indexeddb-crypto-store.ts:54</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_INBOUND_GROUP_SESSIONS_WITHHELD" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS_<wbr/>WITHHELD</span><a href="#STORE_INBOUND_GROUP_SESSIONS_WITHHELD" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS_<wbr/>WITHHELD</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;inbound_group_sessions_withheld&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L54">src/crypto/store/indexeddb-crypto-store.ts:54</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L55">src/crypto/store/indexeddb-crypto-store.ts:55</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_PARKED_SHARED_HISTORY" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>PARKED_<wbr/>SHARED_<wbr/>HISTORY</span><a href="#STORE_PARKED_SHARED_HISTORY" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>PARKED_<wbr/>SHARED_<wbr/>HISTORY</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;parked_shared_history&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L56">src/crypto/store/indexeddb-crypto-store.ts:56</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L57">src/crypto/store/indexeddb-crypto-store.ts:57</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_ROOMS" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>ROOMS</span><a href="#STORE_ROOMS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>ROOMS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;rooms&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L58">src/crypto/store/indexeddb-crypto-store.ts:58</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L59">src/crypto/store/indexeddb-crypto-store.ts:59</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_SESSIONS" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>SESSIONS</span><a href="#STORE_SESSIONS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>SESSIONS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;sessions&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L52">src/crypto/store/indexeddb-crypto-store.ts:52</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L53">src/crypto/store/indexeddb-crypto-store.ts:53</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="STORE_SHARED_HISTORY_INBOUND_GROUP_SESSIONS" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>STORE_<wbr/>SHARED_<wbr/>HISTORY_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS</span><a href="#STORE_SHARED_HISTORY_INBOUND_GROUP_SESSIONS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">STORE_<wbr/>SHARED_<wbr/>HISTORY_<wbr/>INBOUND_<wbr/>GROUP_<wbr/>SESSIONS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;shared_history_inbound_group_sessions&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L55">src/crypto/store/indexeddb-crypto-store.ts:55</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L56">src/crypto/store/indexeddb-crypto-store.ts:56</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="addEndToEndInboundGroupSession" class="tsd-anchor"></a>
@@ -244,7 +245,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#addEndToEndInboundGroupSession">addEndToEndInboundGroupSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L570">src/crypto/store/indexeddb-crypto-store.ts:570</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L582">src/crypto/store/indexeddb-crypto-store.ts:582</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addParkedSharedHistory" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Parked<wbr/>Shared<wbr/>History</span><a href="#addParkedSharedHistory" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -265,7 +266,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#addParkedSharedHistory">addParkedSharedHistory</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L750">src/crypto/store/indexeddb-crypto-store.ts:750</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L762">src/crypto/store/indexeddb-crypto-store.ts:762</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addSharedHistoryInboundGroupSession" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Shared<wbr/>History<wbr/>Inbound<wbr/>Group<wbr/>Session</span><a href="#addSharedHistoryInboundGroupSession" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -300,7 +301,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#addSharedHistoryInboundGroupSession">addSharedHistoryInboundGroupSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L725">src/crypto/store/indexeddb-crypto-store.ts:725</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L737">src/crypto/store/indexeddb-crypto-store.ts:737</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="containsData" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>contains<wbr/>Data</span><a href="#containsData" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -313,7 +314,20 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#containsData">containsData</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L86">src/crypto/store/indexeddb-crypto-store.ts:86</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L87">src/crypto/store/indexeddb-crypto-store.ts:87</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="countEndToEndInboundGroupSessions" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span><a href="#countEndToEndInboundGroupSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="countEndToEndInboundGroupSessions.countEndToEndInboundGroupSessions-1"><span class="tsd-kind-call-signature">count<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><a href="#countEndToEndInboundGroupSessions.countEndToEndInboundGroupSessions-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description"><code class="tsd-tag ts-flagInternal">Internal</code> 
+<div class="tsd-comment tsd-typography"><p>Count the number of Megolm sessions in the database.</p>
+<p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html#countEndToEndInboundGroupSessions" class="tsd-kind-method">countEndToEndInboundGroupSessions</a>.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#countEndToEndInboundGroupSessions">countEndToEndInboundGroupSessions</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L516">src/crypto/store/indexeddb-crypto-store.ts:516</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="countEndToEndSessions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions</span><a href="#countEndToEndSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -349,7 +363,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#countEndToEndSessions">countEndToEndSessions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L425">src/crypto/store/indexeddb-crypto-store.ts:425</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L426">src/crypto/store/indexeddb-crypto-store.ts:426</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="countSessionsNeedingBackup" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>count<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span><a href="#countSessionsNeedingBackup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -370,7 +384,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#countSessionsNeedingBackup">countSessionsNeedingBackup</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L694">src/crypto/store/indexeddb-crypto-store.ts:694</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L706">src/crypto/store/indexeddb-crypto-store.ts:706</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="deleteAllData" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete<wbr/>All<wbr/>Data</span><a href="#deleteAllData" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -383,7 +397,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#deleteAllData">deleteAllData</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L184">src/crypto/store/indexeddb-crypto-store.ts:184</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L185">src/crypto/store/indexeddb-crypto-store.ts:185</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="deleteEndToEndInboundGroupSessionsBatch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions<wbr/>Batch</span><a href="#deleteEndToEndInboundGroupSessionsBatch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -401,7 +415,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#deleteEndToEndInboundGroupSessionsBatch">deleteEndToEndInboundGroupSessionsBatch</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L624">src/crypto/store/indexeddb-crypto-store.ts:624</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L636">src/crypto/store/indexeddb-crypto-store.ts:636</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="deleteEndToEndSessionsBatch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions<wbr/>Batch</span><a href="#deleteEndToEndSessionsBatch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -419,7 +433,7 @@ senderCurve25519Key and sessionID, the session will not be added.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#deleteEndToEndSessionsBatch">deleteEndToEndSessionsBatch</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L526">src/crypto/store/indexeddb-crypto-store.ts:526</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L538">src/crypto/store/indexeddb-crypto-store.ts:538</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="deleteOutgoingRoomKeyRequest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Request</span><a href="#deleteOutgoingRoomKeyRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -446,7 +460,7 @@ found</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#deleteOutgoingRoomKeyRequest">deleteOutgoingRoomKeyRequest</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L334">src/crypto/store/indexeddb-crypto-store.ts:334</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L335">src/crypto/store/indexeddb-crypto-store.ts:335</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="doTxn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>do<wbr/>Txn</span><a href="#doTxn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -511,7 +525,7 @@ one of the store functions operating on the same transaction.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#doTxn">doTxn</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L783">src/crypto/store/indexeddb-crypto-store.ts:783</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L795">src/crypto/store/indexeddb-crypto-store.ts:795</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="filterOutNotifiedErrorDevices" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>filter<wbr/>Out<wbr/>Notified<wbr/>Error<wbr/>Devices</span><a href="#filterOutNotifiedErrorDevices" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -525,7 +539,7 @@ one of the store functions operating on the same transaction.</p>
 <h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_internal_.IOlmDevice.html" class="tsd-signature-type tsd-kind-interface">IOlmDevice</a><span class="tsd-signature-symbol">&lt;</span><a href="_internal_.DeviceInfo.html" class="tsd-signature-type tsd-kind-class">DeviceInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#filterOutNotifiedErrorDevices">filterOutNotifiedErrorDevices</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L504">src/crypto/store/indexeddb-crypto-store.ts:504</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L505">src/crypto/store/indexeddb-crypto-store.ts:505</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getAccount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Account</span><a href="#getAccount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -552,7 +566,7 @@ one of the store functions operating on the same transaction.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getAccount">getAccount</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L350">src/crypto/store/indexeddb-crypto-store.ts:350</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L351">src/crypto/store/indexeddb-crypto-store.ts:351</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getAllEndToEndInboundGroupSessions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span><a href="#getAllEndToEndInboundGroupSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -590,7 +604,7 @@ one of the store functions operating on the same transaction.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getAllEndToEndInboundGroupSessions">getAllEndToEndInboundGroupSessions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L557">src/crypto/store/indexeddb-crypto-store.ts:557</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L569">src/crypto/store/indexeddb-crypto-store.ts:569</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getAllEndToEndSessions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions</span><a href="#getAllEndToEndSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -628,7 +642,7 @@ one of the store functions operating on the same transaction.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getAllEndToEndSessions">getAllEndToEndSessions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L476">src/crypto/store/indexeddb-crypto-store.ts:476</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L477">src/crypto/store/indexeddb-crypto-store.ts:477</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getAllOutgoingRoomKeyRequestsByState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>All<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Requests<wbr/>By<wbr/>State</span><a href="#getAllOutgoingRoomKeyRequestsByState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -647,7 +661,7 @@ unlike above, return a list of all entries in one state.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getAllOutgoingRoomKeyRequestsByState">getAllOutgoingRoomKeyRequestsByState</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L283">src/crypto/store/indexeddb-crypto-store.ts:283</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L284">src/crypto/store/indexeddb-crypto-store.ts:284</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getCrossSigningKeys" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Cross<wbr/>Signing<wbr/>Keys</span><a href="#getCrossSigningKeys" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -685,7 +699,7 @@ user signing key).</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getCrossSigningKeys">getCrossSigningKeys</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L373">src/crypto/store/indexeddb-crypto-store.ts:373</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L374">src/crypto/store/indexeddb-crypto-store.ts:374</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndDeviceData" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Device<wbr/>Data</span><a href="#getEndToEndDeviceData" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -722,7 +736,7 @@ user signing key).</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndDeviceData">getEndToEndDeviceData</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L652">src/crypto/store/indexeddb-crypto-store.ts:652</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L664">src/crypto/store/indexeddb-crypto-store.ts:664</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndInboundGroupSession" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Session</span><a href="#getEndToEndInboundGroupSession" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -772,20 +786,20 @@ server key and session ID</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndInboundGroupSession">getEndToEndInboundGroupSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L541">src/crypto/store/indexeddb-crypto-store.ts:541</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L553">src/crypto/store/indexeddb-crypto-store.ts:553</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndInboundGroupSessionsBatch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions<wbr/>Batch</span><a href="#getEndToEndInboundGroupSessionsBatch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getEndToEndInboundGroupSessionsBatch.getEndToEndInboundGroupSessionsBatch-1"><span class="tsd-kind-call-signature">get<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions<wbr/>Batch</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.ISession.html" class="tsd-signature-type tsd-kind-interface">ISession</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getEndToEndInboundGroupSessionsBatch.getEndToEndInboundGroupSessionsBatch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getEndToEndInboundGroupSessionsBatch.getEndToEndInboundGroupSessionsBatch-1"><span class="tsd-kind-call-signature">get<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions<wbr/>Batch</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.SessionExtended.html" class="tsd-signature-type tsd-kind-interface">SessionExtended</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getEndToEndInboundGroupSessionsBatch.getEndToEndInboundGroupSessionsBatch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description"><code class="tsd-tag ts-flagInternal">Internal</code> 
 <div class="tsd-comment tsd-typography"><p>Fetch a batch of Megolm sessions from the database.</p>
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html#getEndToEndInboundGroupSessionsBatch" class="tsd-kind-method">getEndToEndInboundGroupSessionsBatch</a>.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.ISession.html" class="tsd-signature-type tsd-kind-interface">ISession</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.SessionExtended.html" class="tsd-signature-type tsd-kind-interface">SessionExtended</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndInboundGroupSessionsBatch">getEndToEndInboundGroupSessionsBatch</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L613">src/crypto/store/indexeddb-crypto-store.ts:613</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L625">src/crypto/store/indexeddb-crypto-store.ts:625</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndRooms" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Rooms</span><a href="#getEndToEndRooms" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -821,7 +835,7 @@ server key and session ID</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndRooms">getEndToEndRooms</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L673">src/crypto/store/indexeddb-crypto-store.ts:673</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L685">src/crypto/store/indexeddb-crypto-store.ts:685</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndSession" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Session</span><a href="#getEndToEndSession" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -872,7 +886,7 @@ and another device.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndSession">getEndToEndSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L441">src/crypto/store/indexeddb-crypto-store.ts:441</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L442">src/crypto/store/indexeddb-crypto-store.ts:442</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndSessionProblem" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Session<wbr/>Problem</span><a href="#getEndToEndSessionProblem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -888,7 +902,7 @@ and another device.</p>
 <h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.IProblem.html" class="tsd-signature-type tsd-kind-interface">IProblem</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndSessionProblem">getEndToEndSessionProblem</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L500">src/crypto/store/indexeddb-crypto-store.ts:500</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L501">src/crypto/store/indexeddb-crypto-store.ts:501</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndSessions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions</span><a href="#getEndToEndSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -937,7 +951,7 @@ device.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndSessions">getEndToEndSessions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L461">src/crypto/store/indexeddb-crypto-store.ts:461</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L462">src/crypto/store/indexeddb-crypto-store.ts:462</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getEndToEndSessionsBatch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions<wbr/>Batch</span><a href="#getEndToEndSessionsBatch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -950,7 +964,7 @@ device.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getEndToEndSessionsBatch">getEndToEndSessionsBatch</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L515">src/crypto/store/indexeddb-crypto-store.ts:515</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L527">src/crypto/store/indexeddb-crypto-store.ts:527</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getMigrationState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Migration<wbr/>State</span><a href="#getMigrationState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -963,7 +977,7 @@ device.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getMigrationState">getMigrationState</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L222">src/crypto/store/indexeddb-crypto-store.ts:222</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L223">src/crypto/store/indexeddb-crypto-store.ts:223</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getOrAddOutgoingRoomKeyRequest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Or<wbr/>Add<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Request</span><a href="#getOrAddOutgoingRoomKeyRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -984,7 +998,7 @@ add a new one</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getOrAddOutgoingRoomKeyRequest">getOrAddOutgoingRoomKeyRequest</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L246">src/crypto/store/indexeddb-crypto-store.ts:246</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L247">src/crypto/store/indexeddb-crypto-store.ts:247</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getOutgoingRoomKeyRequest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Request</span><a href="#getOutgoingRoomKeyRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1007,7 +1021,7 @@ add a new one</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getOutgoingRoomKeyRequest">getOutgoingRoomKeyRequest</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L259">src/crypto/store/indexeddb-crypto-store.ts:259</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L260">src/crypto/store/indexeddb-crypto-store.ts:260</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getOutgoingRoomKeyRequestByState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Request<wbr/>By<wbr/>State</span><a href="#getOutgoingRoomKeyRequestByState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1031,7 +1045,7 @@ add a new one</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getOutgoingRoomKeyRequestByState">getOutgoingRoomKeyRequestByState</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L273">src/crypto/store/indexeddb-crypto-store.ts:273</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L274">src/crypto/store/indexeddb-crypto-store.ts:274</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getOutgoingRoomKeyRequestsByTarget" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Requests<wbr/>By<wbr/>Target</span><a href="#getOutgoingRoomKeyRequestsByTarget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1063,7 +1077,7 @@ add a new one</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getOutgoingRoomKeyRequestsByTarget">getOutgoingRoomKeyRequestsByTarget</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L297">src/crypto/store/indexeddb-crypto-store.ts:297</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L298">src/crypto/store/indexeddb-crypto-store.ts:298</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getSecretStorePrivateKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Secret<wbr/>Store<wbr/>Private<wbr/>Key</span><a href="#getSecretStorePrivateKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1107,7 +1121,7 @@ add a new one</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getSecretStorePrivateKey">getSecretStorePrivateKey</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L385">src/crypto/store/indexeddb-crypto-store.ts:385</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L386">src/crypto/store/indexeddb-crypto-store.ts:386</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getSessionsNeedingBackup" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span><a href="#getSessionsNeedingBackup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1129,7 +1143,7 @@ for no limit.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getSessionsNeedingBackup">getSessionsNeedingBackup</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L685">src/crypto/store/indexeddb-crypto-store.ts:685</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L697">src/crypto/store/indexeddb-crypto-store.ts:697</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getSharedHistoryInboundGroupSessions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Shared<wbr/>History<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span><a href="#getSharedHistoryInboundGroupSessions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1155,7 +1169,7 @@ for no limit.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#getSharedHistoryInboundGroupSessions">getSharedHistoryInboundGroupSessions</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L740">src/crypto/store/indexeddb-crypto-store.ts:740</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L752">src/crypto/store/indexeddb-crypto-store.ts:752</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="markSessionsNeedingBackup" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mark<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span><a href="#markSessionsNeedingBackup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1181,7 +1195,7 @@ for no limit.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#markSessionsNeedingBackup">markSessionsNeedingBackup</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L714">src/crypto/store/indexeddb-crypto-store.ts:714</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L726">src/crypto/store/indexeddb-crypto-store.ts:726</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="setMigrationState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Migration<wbr/>State</span><a href="#setMigrationState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1199,7 +1213,7 @@ for no limit.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#setMigrationState">setMigrationState</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L233">src/crypto/store/indexeddb-crypto-store.ts:233</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L234">src/crypto/store/indexeddb-crypto-store.ts:234</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="startup" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>startup</span><a href="#startup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1215,7 +1229,7 @@ or a MemoryCryptoStore</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#startup">startup</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L99">src/crypto/store/indexeddb-crypto-store.ts:99</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L100">src/crypto/store/indexeddb-crypto-store.ts:100</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeAccount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>Account</span><a href="#storeAccount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1241,7 +1255,7 @@ This requires an active transaction. See doTxn().</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeAccount">storeAccount</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L361">src/crypto/store/indexeddb-crypto-store.ts:361</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L362">src/crypto/store/indexeddb-crypto-store.ts:362</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeCrossSigningKeys" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>Cross<wbr/>Signing<wbr/>Keys</span><a href="#storeCrossSigningKeys" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1266,7 +1280,7 @@ This requires an active transaction. See doTxn().</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeCrossSigningKeys">storeCrossSigningKeys</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L399">src/crypto/store/indexeddb-crypto-store.ts:399</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L400">src/crypto/store/indexeddb-crypto-store.ts:400</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndDeviceData" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Device<wbr/>Data</span><a href="#storeEndToEndDeviceData" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1292,7 +1306,7 @@ is always consistent, so they are stored in one object.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndDeviceData">storeEndToEndDeviceData</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L641">src/crypto/store/indexeddb-crypto-store.ts:641</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L653">src/crypto/store/indexeddb-crypto-store.ts:653</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndInboundGroupSession" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Session</span><a href="#storeEndToEndInboundGroupSession" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1329,7 +1343,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndInboundGroupSession">storeEndToEndInboundGroupSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L588">src/crypto/store/indexeddb-crypto-store.ts:588</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L600">src/crypto/store/indexeddb-crypto-store.ts:600</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndInboundGroupSessionWithheld" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Session<wbr/>Withheld</span><a href="#storeEndToEndInboundGroupSessionWithheld" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1349,7 +1363,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndInboundGroupSessionWithheld">storeEndToEndInboundGroupSessionWithheld</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L597">src/crypto/store/indexeddb-crypto-store.ts:597</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L609">src/crypto/store/indexeddb-crypto-store.ts:609</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndRoom" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Room</span><a href="#storeEndToEndRoom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1379,7 +1393,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndRoom">storeEndToEndRoom</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L664">src/crypto/store/indexeddb-crypto-store.ts:664</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L676">src/crypto/store/indexeddb-crypto-store.ts:676</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndSession" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Session</span><a href="#storeEndToEndSession" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1414,7 +1428,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndSession">storeEndToEndSession</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L487">src/crypto/store/indexeddb-crypto-store.ts:487</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L488">src/crypto/store/indexeddb-crypto-store.ts:488</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeEndToEndSessionProblem" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>End<wbr/>To<wbr/>End<wbr/>Session<wbr/>Problem</span><a href="#storeEndToEndSessionProblem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1432,7 +1446,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeEndToEndSessionProblem">storeEndToEndSessionProblem</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L496">src/crypto/store/indexeddb-crypto-store.ts:496</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L497">src/crypto/store/indexeddb-crypto-store.ts:497</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="storeSecretStorePrivateKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>store<wbr/>Secret<wbr/>Store<wbr/>Private<wbr/>Key</span><a href="#storeSecretStorePrivateKey" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1467,7 +1481,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#storeSecretStorePrivateKey">storeSecretStorePrivateKey</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L410">src/crypto/store/indexeddb-crypto-store.ts:410</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L411">src/crypto/store/indexeddb-crypto-store.ts:411</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="takeParkedSharedHistory" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>take<wbr/>Parked<wbr/>Shared<wbr/>History</span><a href="#takeParkedSharedHistory" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1486,7 +1500,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#takeParkedSharedHistory">takeParkedSharedHistory</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L757">src/crypto/store/indexeddb-crypto-store.ts:757</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L769">src/crypto/store/indexeddb-crypto-store.ts:769</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="unmarkSessionsNeedingBackup" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unmark<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span><a href="#unmarkSessionsNeedingBackup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1512,7 +1526,7 @@ senderCurve25519Key and sessionID, it will be overwritten.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#unmarkSessionsNeedingBackup">unmarkSessionsNeedingBackup</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L704">src/crypto/store/indexeddb-crypto-store.ts:704</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L716">src/crypto/store/indexeddb-crypto-store.ts:716</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="updateOutgoingRoomKeyRequest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>update<wbr/>Outgoing<wbr/>Room<wbr/>Key<wbr/>Request</span><a href="#updateOutgoingRoomKeyRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1546,7 +1560,7 @@ found</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/_internal_.CryptoStore.html">CryptoStore</a>.<a href="../interfaces/_internal_.CryptoStore.html#updateOutgoingRoomKeyRequest">updateOutgoingRoomKeyRequest</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L317">src/crypto/store/indexeddb-crypto-store.ts:317</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L318">src/crypto/store/indexeddb-crypto-store.ts:318</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="exists" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>exists</span><a href="#exists" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1561,7 +1575,7 @@ found</p>
 <h5><span class="tsd-kind-parameter">dbName</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a597a9d/src/crypto/store/indexeddb-crypto-store.ts#L61">src/crypto/store/indexeddb-crypto-store.ts:61</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/06e8cea/src/crypto/store/indexeddb-crypto-store.ts#L62">src/crypto/store/indexeddb-crypto-store.ts:62</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -1598,6 +1612,7 @@ found</p>
 <li><a href="#addParkedSharedHistory" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Parked<wbr/>Shared<wbr/>History</span></a></li>
 <li><a href="#addSharedHistoryInboundGroupSession" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Shared<wbr/>History<wbr/>Inbound<wbr/>Group<wbr/>Session</span></a></li>
 <li><a href="#containsData" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>contains<wbr/>Data</span></a></li>
+<li><a href="#countEndToEndInboundGroupSessions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Inbound<wbr/>Group<wbr/>Sessions</span></a></li>
 <li><a href="#countEndToEndSessions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>End<wbr/>To<wbr/>End<wbr/>Sessions</span></a></li>
 <li><a href="#countSessionsNeedingBackup" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>count<wbr/>Sessions<wbr/>Needing<wbr/>Backup</span></a></li>
 <li><a href="#deleteAllData" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>delete<wbr/>All<wbr/>Data</span></a></li>
