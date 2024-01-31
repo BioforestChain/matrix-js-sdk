@@ -17,7 +17,7 @@
 <h1>Function getHttpUriForMxc</h1></div>
 <section class="tsd-panel">
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getHttpUriForMxc"><span class="tsd-kind-call-signature">get<wbr/>Http<wbr/>Uri<wbr/>For<wbr/>Mxc</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">baseUrl</span>, <span class="tsd-kind-parameter">mxc</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">width</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">height</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">resizeMethod</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">allowDirectLinks</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getHttpUriForMxc" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getHttpUriForMxc"><span class="tsd-kind-call-signature">get<wbr/>Http<wbr/>Uri<wbr/>For<wbr/>Mxc</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">baseUrl</span>, <span class="tsd-kind-parameter">mxc</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">width</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">height</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">resizeMethod</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">allowDirectLinks</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">allowRedirects</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getHttpUriForMxc" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Get the HTTP URL for an MXC URI.</p>
 </div>
@@ -57,12 +57,19 @@ directly. Fetching such URLs will leak information about the user to
 anyone they share a room with. If false, will return the emptry string
 for such URLs.</p>
 </div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">allowRedirects</span>: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>If true, the caller supports the URL being 307 or
+308 redirected to another resource upon request. If false, redirects
+are not expected.</p>
+</div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The complete URL to the content.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/3c28cfc/src/content-repo.ts#L33">src/content-repo.ts:33</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/a8b3369/src/content-repo.ts#L36">src/content-repo.ts:36</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
