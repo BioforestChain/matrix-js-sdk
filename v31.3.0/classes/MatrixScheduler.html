@@ -25,7 +25,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MatrixScheduler</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L44">src/scheduler.ts:44</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L44">src/scheduler.ts:44</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -89,10 +89,7 @@ Defaults to <a href="MatrixScheduler.html#RETRY_BACKOFF_RATELIMIT" class="tsd-ki
 <ul class="tsd-signatures">
 <li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">event</span>, <span class="tsd-kind-parameter">attempts</span>, <span class="tsd-kind-parameter">err</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Retries events up to 4 times using exponential backoff. This produces wait
-times of 2, 4, 8, and 16 seconds (30s total) after which we give up. If the
-failure was due to a rate limited request, the time specified in the error is
-waited before being retried.</p>
+<div class="tsd-comment tsd-typography"><p>Default retry algorithm for the matrix scheduler. Retries events up to 4 times with exponential backoff.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,19 +134,19 @@ concurrently.</p>
 <h4 class="tsd-returns-title">Returns <a href="MatrixScheduler.html" class="tsd-signature-type tsd-kind-class">MatrixScheduler</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L116">src/scheduler.ts:116</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L91">src/scheduler.ts:91</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="activeQueues" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>active<wbr/>Queues</span><a href="#activeQueues" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">active<wbr/>Queues</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L102">src/scheduler.ts:102</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L77">src/scheduler.ts:77</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="procFn" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>proc<wbr/>Fn</span><a href="#procFn" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">proc<wbr/>Fn</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../types/_internal_.ProcessFunction.html" class="tsd-signature-type tsd-kind-type-alias">ProcessFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L103">src/scheduler.ts:103</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L78">src/scheduler.ts:78</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="queueAlgorithm" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>queue<wbr/>Algorithm</span><a href="#queueAlgorithm" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">queue<wbr/>Algorithm</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> = MatrixScheduler.QUEUE_MESSAGES</span></div>
@@ -181,12 +178,12 @@ the event is not put into a queue and will be sent concurrently.</p>
 
 <div class="tsd-comment tsd-typography"></div></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L143">src/scheduler.ts:143</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L118">src/scheduler.ts:118</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="queues" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>queues</span><a href="#queues" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">queues</span><span class="tsd-signature-symbol">:</span> <a href="https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type" class="tsd-signature-type external" target="_blank">Record</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_internal_.IQueueEntry.html" class="tsd-signature-type tsd-kind-interface">IQueueEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = {}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L101">src/scheduler.ts:101</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L76">src/scheduler.ts:76</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="retryAlgorithm" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>retry<wbr/>Algorithm</span><a href="#retryAlgorithm" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">retry<wbr/>Algorithm</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">event</span>, <span class="tsd-kind-parameter">attempts</span>, <span class="tsd-kind-parameter">err</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> = MatrixScheduler.RETRY_BACKOFF_RATELIMIT</span></div>
@@ -227,7 +224,7 @@ this is 0, the request will be immediately retried. If this is
 
 <div class="tsd-comment tsd-typography"></div></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L130">src/scheduler.ts:130</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L105">src/scheduler.ts:105</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="clearQueue" class="tsd-anchor"></a>
@@ -244,7 +241,7 @@ this is 0, the request will be immediately retried. If this is
 <h5><span class="tsd-kind-parameter">err</span>: <span class="tsd-signature-type">unknown</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L303">src/scheduler.ts:303</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L278">src/scheduler.ts:278</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="disableQueue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>disable<wbr/>Queue</span><a href="#disableQueue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -257,7 +254,7 @@ this is 0, the request will be immediately retried. If this is
 <h5><span class="tsd-kind-parameter">queueName</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L294">src/scheduler.ts:294</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L269">src/scheduler.ts:269</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getQueueForEvent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Queue<wbr/>For<wbr/>Event</span><a href="#getQueueForEvent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -282,7 +279,7 @@ this array <i>will</i> modify the underlying event in the queue.</p>
 <h4>See</h4><p>MatrixScheduler.removeEventFromQueue To remove an event from the queue.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L155">src/scheduler.ts:155</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L130">src/scheduler.ts:130</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="peekNextEvent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>peek<wbr/>Next<wbr/>Event</span><a href="#peekNextEvent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -295,7 +292,7 @@ this array <i>will</i> modify the underlying event in the queue.</p>
 <h5><span class="tsd-kind-parameter">queueName</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.IQueueEntry.html" class="tsd-signature-type tsd-kind-interface">IQueueEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L312">src/scheduler.ts:312</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L287">src/scheduler.ts:287</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="processQueue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>process<wbr/>Queue</span><a href="#processQueue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -308,7 +305,7 @@ this array <i>will</i> modify the underlying event in the queue.</p>
 <h5><span class="tsd-kind-parameter">queueName</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L243">src/scheduler.ts:243</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L218">src/scheduler.ts:218</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="queueEvent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>queue<wbr/>Event</span><a href="#queueEvent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -329,7 +326,7 @@ resolved or rejected in due time, else null.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L207">src/scheduler.ts:207</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L182">src/scheduler.ts:182</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removeEventFromQueue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Event<wbr/>From<wbr/>Queue</span><a href="#removeEventFromQueue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -350,7 +347,7 @@ have the same ID returned from event.getId().</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L171">src/scheduler.ts:171</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L146">src/scheduler.ts:146</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="removeNextEvent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>remove<wbr/>Next<wbr/>Event</span><a href="#removeNextEvent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -363,7 +360,7 @@ have the same ID returned from event.getId().</p>
 <h5><span class="tsd-kind-parameter">queueName</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_internal_.IQueueEntry.html" class="tsd-signature-type tsd-kind-interface">IQueueEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L320">src/scheduler.ts:320</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L295">src/scheduler.ts:295</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="setProcessFunction" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Process<wbr/>Function</span><a href="#setProcessFunction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -385,7 +382,7 @@ in the queue.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L196">src/scheduler.ts:196</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L171">src/scheduler.ts:171</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="startProcessingQueues" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>start<wbr/>Processing<wbr/>Queues</span><a href="#startProcessingQueues" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -393,7 +390,7 @@ in the queue.</p>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L227">src/scheduler.ts:227</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L202">src/scheduler.ts:202</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="QUEUE_MESSAGES" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>QUEUE_<wbr/>MESSAGES</span><a href="#QUEUE_MESSAGES" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -412,16 +409,13 @@ concurrently.</p>
 <h4>See</h4><p>queueAlgorithm</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L86">src/scheduler.ts:86</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L61">src/scheduler.ts:61</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="RETRY_BACKOFF_RATELIMIT" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>RETRY_<wbr/>BACKOFF_<wbr/>RATELIMIT</span><a href="#RETRY_BACKOFF_RATELIMIT" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="RETRY_BACKOFF_RATELIMIT.RETRY_BACKOFF_RATELIMIT-1"><span class="tsd-kind-call-signature">RETRY_<wbr/>BACKOFF_<wbr/>RATELIMIT</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">event</span>, <span class="tsd-kind-parameter">attempts</span>, <span class="tsd-kind-parameter">err</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#RETRY_BACKOFF_RATELIMIT.RETRY_BACKOFF_RATELIMIT-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Retries events up to 4 times using exponential backoff. This produces wait
-times of 2, 4, 8, and 16 seconds (30s total) after which we give up. If the
-failure was due to a rate limited request, the time specified in the error is
-waited before being retried.</p>
+<div class="tsd-comment tsd-typography"><p>Default retry algorithm for the matrix scheduler. Retries events up to 4 times with exponential backoff.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -440,7 +434,7 @@ waited before being retried.</p>
 <h4>See</h4><p>retryAlgorithm</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/scheduler.ts#L54">src/scheduler.ts:54</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/scheduler.ts#L51">src/scheduler.ts:51</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -635,7 +629,6 @@ waited before being retried.</p>
 <li><a href="../interfaces/ICreateRoomStateEvent.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>ICreate<wbr/>Room<wbr/>State<wbr/>Event</span></a></li>
 <li><a href="../interfaces/ICryptoCallbacks.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>ICrypto<wbr/>Callbacks</span></a></li>
 <li><a href="../interfaces/IDecryptOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDecrypt<wbr/>Options</span></a></li>
-<li><a href="../interfaces/IDelegatedAuthConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDelegated<wbr/>Auth<wbr/>Config</span></a></li>
 <li><a href="../interfaces/IDeviceKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDevice<wbr/>Keys</span></a></li>
 <li><a href="../interfaces/IDeviceLists.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDevice<wbr/>Lists</span></a></li>
 <li><a href="../interfaces/IDownloadKeyResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDownload<wbr/>Key<wbr/>Result</span></a></li>
@@ -891,7 +884,6 @@ waited before being retried.</p>
 <li><a href="../variables/MAIN_ROOM_TIMELINE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>MAIN_<wbr/>ROOM_<wbr/>TIMELINE</span></a></li>
 <li><a href="../variables/MSC3912_RELATION_BASED_REDACTIONS_PROP.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>MSC3912_<wbr/>RELATION_<wbr/>BASED_<wbr/>REDACTIONS_<wbr/>PROP</span></a></li>
 <li><a href="../variables/M_ASSET.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>ASSET</span></a></li>
-<li><a href="../variables/M_AUTHENTICATION.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>AUTHENTICATION</span></a></li>
 <li><a href="../variables/M_BEACON.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>BEACON</span></a></li>
 <li><a href="../variables/M_BEACON_INFO.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>BEACON_<wbr/>INFO</span></a></li>
 <li><a href="../variables/M_HTML.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>HTML</span></a></li>
@@ -924,13 +916,14 @@ waited before being retried.</p>
 <li><a href="../variables/UNSTABLE_MSC3089_TREE_SUBTYPE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>UNSTABLE_<wbr/>MSC3089_<wbr/>TREE_<wbr/>SUBTYPE</span></a></li>
 <li><a href="../variables/UNSTABLE_MSC3852_LAST_SEEN_UA.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>UNSTABLE_<wbr/>MSC3852_<wbr/>LAST_<wbr/>SEEN_<wbr/>UA</span></a></li>
 <li><a href="../functions/anySignal.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>any<wbr/>Signal</span></a></li>
+<li><a href="../functions/calculateRetryBackoff.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>calculate<wbr/>Retry<wbr/>Backoff</span></a></li>
 <li><a href="../functions/completeAuthorizationCodeGrant.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>complete<wbr/>Authorization<wbr/>Code<wbr/>Grant</span></a></li>
 <li><a href="../functions/createClient.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>Client</span></a></li>
 <li><a href="../functions/createNewMatrixCall.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>New<wbr/>Matrix<wbr/>Call</span></a></li>
 <li><a href="../functions/createRoomWidgetClient.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>Room<wbr/>Widget<wbr/>Client</span></a></li>
 <li><a href="../functions/decodeBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>decode<wbr/>Base64</span></a></li>
 <li><a href="../functions/determineFeatureSupport.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>determine<wbr/>Feature<wbr/>Support</span></a></li>
-<li><a href="../functions/discoverAndValidateAuthenticationConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>discover<wbr/>And<wbr/>Validate<wbr/>Authentication<wbr/>Config</span></a></li>
+<li><a href="../functions/discoverAndValidateOIDCIssuerWellKnown.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>discover<wbr/>And<wbr/>ValidateOIDCIssuer<wbr/>Well<wbr/>Known</span></a></li>
 <li><a href="../functions/encodeBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Base64</span></a></li>
 <li><a href="../functions/encodeUnpaddedBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Unpadded<wbr/>Base64</span></a></li>
 <li><a href="../functions/encodeUnpaddedBase64Url.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Unpadded<wbr/>Base64<wbr/>Url</span></a></li>
@@ -957,8 +950,7 @@ waited before being retried.</p>
 <li><a href="../functions/validateBearerTokenResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Bearer<wbr/>Token<wbr/>Response</span></a></li>
 <li><a href="../functions/validateIdToken.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Id<wbr/>Token</span></a></li>
 <li><a href="../functions/validateOIDCIssuerWellKnown.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validateOIDCIssuer<wbr/>Well<wbr/>Known</span></a></li>
-<li><a href="../functions/validateStoredUserState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Stored<wbr/>User<wbr/>State</span></a></li>
-<li><a href="../functions/validateWellKnownAuthentication.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Well<wbr/>Known<wbr/>Authentication</span></a></li></ul></nav></div></div></div>
+<li><a href="../functions/validateStoredUserState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Stored<wbr/>User<wbr/>State</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/versionsMenu.js" type="module"></script></body></html>

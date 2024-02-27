@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>validateWellKnownAuthentication | matrix-js-sdk</title><meta name="description" content="Documentation for matrix-js-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><select id="plugin-versions-select" class="title" name="versions"></select><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>calculateRetryBackoff | matrix-js-sdk</title><meta name="description" content="Documentation for matrix-js-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><select id="plugin-versions-select" class="title" name="versions"></select><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,27 +13,39 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">matrix-js-sdk</a></li>
-<li><a href="validateWellKnownAuthentication.html">validateWellKnownAuthentication</a></li></ul>
-<h1>Function validateWellKnownAuthentication</h1></div>
+<li><a href="calculateRetryBackoff.html">calculateRetryBackoff</a></li></ul>
+<h1>Function calculateRetryBackoff</h1></div>
 <section class="tsd-panel">
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="validateWellKnownAuthentication"><span class="tsd-kind-call-signature">validate<wbr/>Well<wbr/>Known<wbr/>Authentication</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">authentication</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IDelegatedAuthConfig.html" class="tsd-signature-type tsd-kind-interface">IDelegatedAuthConfig</a><a href="#validateWellKnownAuthentication" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="calculateRetryBackoff"><span class="tsd-kind-call-signature">calculate<wbr/>Retry<wbr/>Backoff</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">err</span>, <span class="tsd-kind-parameter">attempts</span>, <span class="tsd-kind-parameter">retryConnectionError</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#calculateRetryBackoff" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Validates MSC2965 m.authentication config
-Returns valid configuration</p>
+<div class="tsd-comment tsd-typography"><p>Calculate the backoff time for a request retry attempt.
+This produces wait times of 2, 4, 8, and 16 seconds (30s total) after which we give up. If the
+failure was due to a rate limited request, the time specified in the error is returned.</p>
+<p>Returns -1 if the error is not retryable, or if we reach the maximum number of attempts.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">authentication</span>: <a href="../interfaces/IDelegatedAuthConfig.html" class="tsd-signature-type tsd-kind-interface">IDelegatedAuthConfig</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../interfaces/IDelegatedAuthConfig.html" class="tsd-signature-type tsd-kind-interface">IDelegatedAuthConfig</a></h4><p>config - when present and valid</p>
-
-<div class="tsd-comment tsd-typography">
-<h4>Throws</h4><p>when config is not found or invalid</p>
-</div><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">err</span>: <span class="tsd-signature-type">any</span></h5>
+<div class="tsd-comment tsd-typography"><p>The error thrown by the http call</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">attempts</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The number of attempts made so far, including the one that just failed.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">retryConnectionError</span>: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Whether to retry on <a href="../classes/ConnectionError.html" class="tsd-kind-class">ConnectionError</a> (CORS, connection is down, etc.)</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/c27c357/src/oidc/validate.ts#L45">src/oidc/validate.ts:45</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/matrix-org/matrix-js-sdk/blob/d3dfcd9/src/http-api/utils.ts#L166">src/http-api/utils.ts:166</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -206,7 +218,6 @@ Returns valid configuration</p>
 <li><a href="../interfaces/ICreateRoomStateEvent.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>ICreate<wbr/>Room<wbr/>State<wbr/>Event</span></a></li>
 <li><a href="../interfaces/ICryptoCallbacks.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>ICrypto<wbr/>Callbacks</span></a></li>
 <li><a href="../interfaces/IDecryptOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDecrypt<wbr/>Options</span></a></li>
-<li><a href="../interfaces/IDelegatedAuthConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDelegated<wbr/>Auth<wbr/>Config</span></a></li>
 <li><a href="../interfaces/IDeviceKeys.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDevice<wbr/>Keys</span></a></li>
 <li><a href="../interfaces/IDeviceLists.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDevice<wbr/>Lists</span></a></li>
 <li><a href="../interfaces/IDownloadKeyResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>IDownload<wbr/>Key<wbr/>Result</span></a></li>
@@ -462,7 +473,6 @@ Returns valid configuration</p>
 <li><a href="../variables/MAIN_ROOM_TIMELINE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>MAIN_<wbr/>ROOM_<wbr/>TIMELINE</span></a></li>
 <li><a href="../variables/MSC3912_RELATION_BASED_REDACTIONS_PROP.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>MSC3912_<wbr/>RELATION_<wbr/>BASED_<wbr/>REDACTIONS_<wbr/>PROP</span></a></li>
 <li><a href="../variables/M_ASSET.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>ASSET</span></a></li>
-<li><a href="../variables/M_AUTHENTICATION.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>AUTHENTICATION</span></a></li>
 <li><a href="../variables/M_BEACON.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>BEACON</span></a></li>
 <li><a href="../variables/M_BEACON_INFO.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>BEACON_<wbr/>INFO</span></a></li>
 <li><a href="../variables/M_HTML.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>M_<wbr/>HTML</span></a></li>
@@ -495,13 +505,14 @@ Returns valid configuration</p>
 <li><a href="../variables/UNSTABLE_MSC3089_TREE_SUBTYPE.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>UNSTABLE_<wbr/>MSC3089_<wbr/>TREE_<wbr/>SUBTYPE</span></a></li>
 <li><a href="../variables/UNSTABLE_MSC3852_LAST_SEEN_UA.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg><span>UNSTABLE_<wbr/>MSC3852_<wbr/>LAST_<wbr/>SEEN_<wbr/>UA</span></a></li>
 <li><a href="anySignal.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>any<wbr/>Signal</span></a></li>
+<li><a href="calculateRetryBackoff.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>calculate<wbr/>Retry<wbr/>Backoff</span></a></li>
 <li><a href="completeAuthorizationCodeGrant.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>complete<wbr/>Authorization<wbr/>Code<wbr/>Grant</span></a></li>
 <li><a href="createClient.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>Client</span></a></li>
 <li><a href="createNewMatrixCall.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>New<wbr/>Matrix<wbr/>Call</span></a></li>
 <li><a href="createRoomWidgetClient.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>create<wbr/>Room<wbr/>Widget<wbr/>Client</span></a></li>
 <li><a href="decodeBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>decode<wbr/>Base64</span></a></li>
 <li><a href="determineFeatureSupport.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>determine<wbr/>Feature<wbr/>Support</span></a></li>
-<li><a href="discoverAndValidateAuthenticationConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>discover<wbr/>And<wbr/>Validate<wbr/>Authentication<wbr/>Config</span></a></li>
+<li><a href="discoverAndValidateOIDCIssuerWellKnown.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>discover<wbr/>And<wbr/>ValidateOIDCIssuer<wbr/>Well<wbr/>Known</span></a></li>
 <li><a href="encodeBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Base64</span></a></li>
 <li><a href="encodeUnpaddedBase64.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Unpadded<wbr/>Base64</span></a></li>
 <li><a href="encodeUnpaddedBase64Url.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>encode<wbr/>Unpadded<wbr/>Base64<wbr/>Url</span></a></li>
@@ -528,8 +539,7 @@ Returns valid configuration</p>
 <li><a href="validateBearerTokenResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Bearer<wbr/>Token<wbr/>Response</span></a></li>
 <li><a href="validateIdToken.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Id<wbr/>Token</span></a></li>
 <li><a href="validateOIDCIssuerWellKnown.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validateOIDCIssuer<wbr/>Well<wbr/>Known</span></a></li>
-<li><a href="validateStoredUserState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Stored<wbr/>User<wbr/>State</span></a></li>
-<li><a href="validateWellKnownAuthentication.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Well<wbr/>Known<wbr/>Authentication</span></a></li></ul></nav></div></div></div>
+<li><a href="validateStoredUserState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>validate<wbr/>Stored<wbr/>User<wbr/>State</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div><script src="../assets/versionsMenu.js" type="module"></script></body></html>
