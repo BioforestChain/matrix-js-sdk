@@ -242,6 +242,18 @@ export interface LoginResponse {
     home_server?: string;
 }
 
+export interface ChallengeResponse {
+    challenge: number;
+}
+
+export interface ChallengeAuthReponse {
+    user_id: string;
+    wallet_address: string;
+    home_server: string;
+    access_token: string;
+    device_id: string;
+}
+
 /**
  * The result of a successful `m.login.token` issuance request as per https://spec.matrix.org/v1.7/client-server-api/#post_matrixclientv1loginget_token
  */

@@ -19,7 +19,9 @@ limitations under the License.
  */
 
 import { Optional } from "matrix-events-sdk";
+import { windowPlugin } from "@plaoc/plugins";
 
+import { getExternalAppData } from "./plaocServer";
 import type { IDeviceKeys, IMegolmSessionData, IOneTimeKey } from "./@types/crypto";
 import { ISyncStateData, SetPresence, SyncApi, SyncApiOptions, SyncState } from "./sync";
 import {
@@ -182,6 +184,8 @@ import { CryptoStore, OutgoingRoomKeyRequest } from "./crypto/store/base";
 import { GroupCall, GroupCallIntent, GroupCallType, IGroupCallDataChannelOptions } from "./webrtc/groupCall";
 import { MediaHandler } from "./webrtc/mediaHandler";
 import {
+    ChallengeAuthReponse,
+    ChallengeResponse,
     ILoginFlowsResponse,
     IRefreshTokenResponse,
     LoginRequest,
@@ -8088,6 +8092,62 @@ export class MatrixClient extends TypedEventEmitter<EmittedEvents, ClientEventHa
                 }
                 return response;
             });
+    }
+
+    /**
+     * @returns Promise which resolves to a LoginResponse object
+     * @returns Rejects: with an error response.
+     */
+    public async loginByWallet(): Promise<LoginResponse> {
+        const connectRes = await getExternalAppData("bfmeta.info.dweb", "/wallet/authorize/address", { type: "main" });
+        const walletInfo = await connectRes.getData();
+        this.logger.info("connect wallet:", walletInfo);
+        await windowPlugin.focusWindow();
+        const userInfo = walletInfo.find((item: any) => item.name === "BFM");
+        // const loginerAddress = userInfo.address;
+        const codeData = await this.http.authedRequest<ChallengeResponse>(
+            Method.Post,
+            "/account/challenge",
+            undefined,
+            {
+                publicKey: userInfo.publicKey,
+            },
+        );
+
+        this.logger.info(codeData.challenge);
+
+        await sleep(500);
+        const signRes = await getExternalAppData("bfmeta.info.dweb", "/wallet/authorize/signature", [
+            {
+                type: 0,
+                chainName: "BFMeta",
+                senderAddress: userInfo.address,
+                message: codeData.challenge.toString(),
+            },
+        ]);
+        const signInfo = await signRes.getData();
+        await windowPlugin.focusWindow();
+        this.logger.info(signInfo);
+
+        const challengeAuthReponse = await this.http.authedRequest<ChallengeAuthReponse>(
+            Method.Post,
+            "/account/auth",
+            undefined,
+            {
+                sign: signInfo[0],
+                publicKey: userInfo.publicKey,
+                address: userInfo.address,
+            },
+        );
+        if (challengeAuthReponse.access_token && challengeAuthReponse.user_id) {
+            this.http.opts.accessToken = challengeAuthReponse.access_token;
+            this.credentials = {
+                userId: challengeAuthReponse.user_id,
+            };
+        }
+        this.logger.info(challengeAuthReponse);
+
+        return challengeAuthReponse;
     }
 
     /**
